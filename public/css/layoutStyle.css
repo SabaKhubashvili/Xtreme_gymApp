@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    background-color: #EEEEEE;
+}
+
+
+/**  NAVBAR START */
+
+
+
+.navbar {
+    transition: all 0.4s;
+    padding: 0 90px;
+}
+.navbar img{
+    width: 250px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-weight: 900 !important;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+.navbar  #logo_black{
+    display: none;
+}
+.navbar  #logo_white{
+    display: inline;
+}
+
+.navbar.active #logo_black{
+    display: inline;
+}
+
+.navbar.active #logo_white{
+    display: none;
+}
+
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+    .navbar  #logo_black{
+        display: inline;
+    }
+    .navbar  #logo_white{
+        display: none;
+    }
+}
+
+@media (max-width: 722px){
+    .navbar{
+        padding: 0 30px;
+    }
+    .navbar img{
+        width: 200px;
+    }
+}
+@media (max-width: 390px){
+
+    .navbar img{
+        width: 150px;
+    }
+
+}
+
+
+/** NAVBAR END */
+
+
+/** FOOTER */
+
+
+  
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	margin-top: 140px;
+ 
+
+}
+footer .col{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: 20px;
+}
+footer .logo{
+    margin-bottom: 30px;
+}
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 13px;
+    text-decoration: none !important;
+    color: #222;
+    margin-bottom:10px;
+    transition: 0.2s;
+
+}
+footer .follow{
+    margin-top: 20px;
+
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+    transition: 0.2s
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover{
+    color: #088178;
+}
+footer .copyright{
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 790px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
